@@ -19,7 +19,7 @@ async function run() {
         await page.goto(`https://www.pinterest.com/search/pins/?q=${req.query.query}`);
 
         await page.waitForFunction(() => {
-            return document.querySelectorAll('img.hCL.kVc.L4E.MIw[src*="236x"]:not([role="presentation"])').length >= 15;
+            return document.querySelectorAll('img.hCL.kVc.L4E.MIw[src*="236x"]:not([role="presentation"])').length >= 30;
         });
         
         // Query for images that contain "236x" in the `src` attribute
