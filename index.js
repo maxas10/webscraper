@@ -8,7 +8,7 @@ require("dotenv").config()
 async function run() {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
-    await page.setViewport({ width: 2560, height: 1440 });
+    await page.setViewport({ width: 2560, height: 5000 });
     await page.setCookie({
         name: "_pinterest_sess",
         url: "https://www.pinterest.com/",
